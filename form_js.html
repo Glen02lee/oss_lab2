@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>No Stylesheet</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateForm() {
+            let isValid = true;
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let nameRegex = /^[a-zA-Z\s]+$/;
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let phoneRegex = /^[0-9]{10,15}$/; 
+            if (name === "" || !nameRegex.test(name)) {
+                alert("Please enter a valid name (letters only).");
+                isValid = false;
+            }
+
+            if (email === "" || !emailRegex.test(email)) {
+                alert("Please enter a valid email.");
+                isValid = false;
+            }
+
+            if (phone === "" || !phoneRegex.test(phone)) {
+                alert("Please enter a valid phone number (10-15 digits).");
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
+</head>
+<body>
+    <div class="container wrapper">
+        <div id="top">
+            <h1>Welcome to 이민석's Homepage (22100504)</h1>
+            <p>Use the menu to select different Stylesheets</p>
+        </div>
+        <div class="wrapper">
+            <div id="menubar">
+                <ul id="menulist">
+                    <li class="menuitem"><a href="style1.html">Stylesheet 1</a></li>
+                    <li class="menuitem"><a href="style2.html">Stylesheet 2</a></li>
+                    <li class="menuitem"><a href="style3.html">Stylesheet 3</a></li>
+                    <li class="menuitem">Stylesheet 4
+                    <li class="menuitem"><a href="index.html">No Stylesheet</a></li>
+                </ul>
+            </div>
+            <div id="main">
+                <h1>Same Page Different Stylesheets</h1>
+                <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+                <a href="style1.html">Stylesheet1</a>,
+                <a href="style2.html">Stylesheet2</a>,
+                <a href="style3.html">Stylesheet3</a>.
+                <a href="#">Stylesheet4</a>.
+                </p>
+
+                <h2>Enter your information</h2>
+                <form onsubmit="return validateForm()">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="you@example.com"><br><br>
+
+                    <label for="phone">Phone:</label><br>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div id="sidebar">
+                <h3>Side-Bar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </div>  
+        
+        <div id="bottom">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </div>
+    </div>
+    
+</body>
+</html>

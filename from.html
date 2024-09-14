@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic List Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        #listContainer {
+            margin-top: 20px;
+        }
+        .list-item {
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        #addBtn, #clearBtn {
+            margin-top: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dynamic List with Add/Delete_22100504_이민석</h1>
+
+    <label for="itemInput">입력해주세요!!:</label>
+    <input type="text" id="itemInput" placeholder="Add item to list">
+    <button id="addBtn">추가</button>
+    <button id="clearBtn">삭제</button>
+
+    <div id="listContainer">
+        <h2>목록</h2>
+        <ul id="itemList"></ul>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const addBtn = document.getElementById("addBtn");
+            const clearBtn = document.getElementById("clearBtn");
+            const itemInput = document.getElementById("itemInput");
+            const itemList = document.getElementById("itemList");
+
+            addBtn.addEventListener("click", function() {
+                const inputValue = itemInput.value.trim();
+
+                if (inputValue) {
+                    const listItem = document.createElement("li");
+                    listItem.className = "list-item";
+                    listItem.textContent = inputValue;
+                    itemList.appendChild(listItem);
+
+                    itemInput.value = "";
+                } else {
+                    alert("Please enter a valid item.");
+                }
+            });
+
+            clearBtn.addEventListener("click", function() {
+                itemList.innerHTML = "";
+            });
+            itemInput.addEventListener("keypress", function(event) {
+                if (event.key === "Enter") {
+                    addBtn.click();
+                }
+            });
+        };
+    </script>
+
+</body>
+</html>
