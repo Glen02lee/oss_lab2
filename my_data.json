@@ -1,0 +1,121 @@
+{
+  "players": [
+    {
+      "id": "1",
+      "name": "김동주",
+      "position": "3루수",
+      "career_start": 1998,
+      "career_end": 2013,
+      "notable_awards": [
+        "MVP 2001",
+        "골든글러브 2000, 2001, 2004"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "김선우",
+      "position": "투수",
+      "career_start": 2005,
+      "career_end": 2016,
+      "notable_awards": [
+        "2011년 13승 시즌",
+        "두산 에이스 투수"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "김현수",
+      "position": "외야수",
+      "career_start": 2006,
+      "career_end": 2015,
+      "notable_awards": [
+        "MVP 2008",
+        "골든글러브 2008, 2009, 2010"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "오재원",
+      "position": "2루수",
+      "career_start": 2006,
+      "career_end": 2022,
+      "notable_awards": [
+        "골든글러브 2016"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "유희관",
+      "position": "투수",
+      "career_start": 2009,
+      "career_end": 2021,
+      "notable_awards": [
+        "두산 역사상 최다 승리 투수"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "정수빈",
+      "position": "외야수",
+      "career_start": 2009,
+      "career_end": "현재",
+      "notable_awards": [
+        "한국시리즈 MVP 2015"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "최준석",
+      "position": "1루수",
+      "career_start": 2011,
+      "career_end": 2017,
+      "notable_awards": [
+        "두산 타율 1위 (2015)"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "박세혁",
+      "position": "포수",
+      "career_start": 2012,
+      "career_end": "현재",
+      "notable_awards": [
+        "한국시리즈 MVP 2019"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "양의지",
+      "position": "포수",
+      "career_start": 2007,
+      "career_end": "현재",
+      "notable_awards": [
+        "골든글러브 2014, 2015, 2016, 2017, 2018"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "이영하",
+      "position": "투수",
+      "career_start": 2017,
+      "career_end": "현재",
+      "notable_awards": [
+        "최고 승률 투수 2019"
+      ]
+    },
+    {
+      "id": "f2cd",
+      "name": "손시헌",
+      "position": "좌익수",
+      "career_start": 2012,
+      "career_end": 2022
+    },
+    {
+      "id": "cc52",
+      "name": "이종욱",
+      "position": "중견수",
+      "career_start": "2012",
+      "career_end": "2022"
+    }
+  ]
+}
